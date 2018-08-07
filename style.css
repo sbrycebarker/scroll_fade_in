@@ -57,17 +57,17 @@ header {
   /* display: none */
 }
 
-.on-1 {
+/* .on-1 {
+  display: none
+} */
+
+/* .on-2 {
   display: none
 }
 
-.on-2 {
-  /* display: none */
-}
-
 .on-3 {
-  /* display: none */
-}
+  display: none
+} */
 
 /* Add some content at the bottom of the video/page */
 .content {
