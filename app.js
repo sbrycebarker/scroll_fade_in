@@ -7,8 +7,8 @@ window.onscroll = function() {
 let reef = document.getElementById('reef');
 let ele = document.getElementById('elephants');
 let deer = document.getElementById('deer');
-ele.style.display = 'none';
-deer.style.display = 'none';
+ele.style.opacity = '0';
+deer.style.opacity = '0';
 
 // scrollFunction()
 function scrollFunction() {
@@ -23,17 +23,17 @@ function scrollFunction() {
   function scrollPoint(scroll) {
     if (scroll < 45) {
       console.log('reef');
-      ele.style.display = 'none';
-      deer.style.display = 'none';
-      reef.style.display = 'flex'
+      ele.style.opacity = '0';
+      deer.style.opacity = '0';
+      reef.style.opacity = '1';
     } if (scroll > 45 && scroll < 95) {
-      reef.style.display = 'none';
-      ele.style.display = 'none'
-      deer.style.display = 'flex';
+      reef.style.opacity = '0';
+      ele.style.opacity = '0';
+      deer.style.opacity = '1';
     } if (scroll > 95) {
-      reef.style.display = 'none';
-      deer.style.display = 'none';
-      ele.style.display = 'flex';
+      reef.style.opacity = '0';
+      deer.style.opacity = '0';
+      ele.style.opacity = '1';
     }
 
   }

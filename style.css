@@ -46,6 +46,7 @@ header {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    /* transition-duration: 2s */
 }
 
 .view {
@@ -54,20 +55,8 @@ header {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  /* display: none */
+  transition: opacity 2s;
 }
-
-/* .on-1 {
-  display: none
-} */
-
-/* .on-2 {
-  display: none
-}
-
-.on-3 {
-  display: none
-} */
 
 /* Add some content at the bottom of the video/page */
 .content {
