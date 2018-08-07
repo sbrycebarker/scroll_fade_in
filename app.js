@@ -13,6 +13,9 @@ function scrollFunction() {
   var scrolled = (winScroll / height) * 100;
   // document.getElementById("myBar").style.width = scrolled + "%";
   console.log("scroll at", scrolled)
+
+  // Bring HTML Elements into JavaScript
+
   let reef = document.getElementById('reef');
   let ele = document.getElementById('elephants');
   let deer = document.getElementById('deer');
@@ -27,8 +30,12 @@ function scrollFunction() {
       reef.style.display = 'none';
       ele.style.display = 'none'
       deer.style.display = 'flex';
-
+    } if (scroll > 95) {
+      reef.style.display = 'none';
+      deer.style.display = 'none';
+      ele.style.display = 'flex';
     }
+
   }
 
   scrollPoint(scrolled)
