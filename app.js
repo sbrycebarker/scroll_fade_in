@@ -4,7 +4,11 @@ window.onscroll = function() {
 
 
 
-
+let reef = document.getElementById('reef');
+let ele = document.getElementById('elephants');
+let deer = document.getElementById('deer');
+ele.style.display = 'none';
+deer.style.display = 'none';
 
 // scrollFunction()
 function scrollFunction() {
@@ -16,16 +20,12 @@ function scrollFunction() {
 
   // Bring HTML Elements into JavaScript
 
-  let reef = document.getElementById('reef');
-  let ele = document.getElementById('elephants');
-  let deer = document.getElementById('deer');
-
   function scrollPoint(scroll) {
     if (scroll < 45) {
       console.log('reef');
-      reef.style.display = 'flex'
       ele.style.display = 'none';
       deer.style.display = 'none';
+      reef.style.display = 'flex'
     } if (scroll > 45 && scroll < 95) {
       reef.style.display = 'none';
       ele.style.display = 'none'
