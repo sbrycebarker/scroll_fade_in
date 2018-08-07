@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -9,8 +15,8 @@ body {
 }
 
 header {
-  position: fixed;
-  height: 100%;
+  position: absolute;
+  height: 400vh;
   width: 100px;
   z-index: 10;
   border-right: solid black 3px;
@@ -25,8 +31,8 @@ header {
 .nav {
   width: 100%;
   height: 25px;
+  margin: auto;
   box-sizing: border-box;
-  margin: 25px 0;
   position: relative;
   align-items: center;
   text-align: center;
@@ -35,7 +41,7 @@ header {
 
 /* Style the video: 100% width and height to cover the entire window */
 #reef {
-    position: relative;
+    position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
@@ -43,11 +49,24 @@ header {
 }
 
 .view {
-  position: relative;
+  position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  /* display: none */
+}
+
+.on-1 {
+  display: none
+}
+
+.on-2 {
+  /* display: none */
+}
+
+.on-3 {
+  /* display: none */
 }
 
 /* Add some content at the bottom of the video/page */
@@ -58,4 +77,5 @@ header {
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
+    text-align: center;
 }
