@@ -67,4 +67,15 @@ header {
     width: 100%;
     padding: 20px;
     text-align: center;
+    z-index: 50
+}
+
+.h2 {
+  height: 25px;
+  width: 100px;
+  margin: auto;
+  z-index: 25px;
+  position: relative;
+  background-color: red;
+  opacity: 1;
 }
