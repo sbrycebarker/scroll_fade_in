@@ -7,6 +7,7 @@
 html {
   margin: 0;
   padding: 0;
+  min-width: 300px;
   /* background-color: #121212 */
 }
 
@@ -22,9 +23,9 @@ header {
   border-right: solid black 3px;
   display: flex;
   flex-direction: column;
-  background-color: #0073B1;
+  background-color: white;
   opacity: .8;
-  color: white;
+  color: black;
   font-family: sans-serif;
 }
 
@@ -37,11 +38,6 @@ header {
   align-items: center;
   text-align: center;
   /* vertical-align: middle; */
-}
-
-.nav p {
-  width: 10px;
-  margin: auto;
 }
 
 /* Style the video: 100% width and height to cover the entire window */
@@ -70,7 +66,7 @@ header {
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 100%;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
     z-index: 50
 }
@@ -83,4 +79,18 @@ header {
   position: relative;
   background-color: red;
   opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    width: 50px;
+    font-size: 12px;
+  }
+
+  .content {
+    font-size: 10px;
+    padding: 20px 0;
+    min-width: 400px;
+  }
+
 }
