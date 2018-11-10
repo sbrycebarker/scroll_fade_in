@@ -39,6 +39,11 @@ header {
   /* vertical-align: middle; */
 }
 
+.nav p {
+  width: 10px;
+  margin: auto;
+}
+
 /* Style the video: 100% width and height to cover the entire window */
 #reef {
     position: fixed;
