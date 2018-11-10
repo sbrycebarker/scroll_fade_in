@@ -4,6 +4,15 @@
   font-family: sans-serif;
 }
 
+.hello {
+  margin: auto;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  background: white;
+  z-index: 2;
+  opacity: inherit;
+}
 html {
   margin: 0;
   padding: 0;
