@@ -1,16 +1,22 @@
+// JavaScript to trigger scroll tracking function on scroll
+
 window.onscroll = function() {
   scrollFunction()
 };
 
-  // Bring HTML Elements into JavaScript
+  // Brings HTML Elements into JavaScript
 
 let reef = document.getElementById('reef');
 let ele = document.getElementById('elephants');
 let deer = document.getElementById('deer');
 let bear = document.getElementById('bear');
+
+//  Set elements to clear opacity as default
 ele.style.opacity = '0';
 deer.style.opacity = '0';
 bear.style.opacity = '0';
+
+//  This is our scroll tracking function
 
 function scrollFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -18,6 +24,7 @@ function scrollFunction() {
   var scrolled = (winScroll / height) * 1000;
   console.log("scroll at", scrolled)
 
+//  This is the function that triggers elements to fade at desired scrolling points
 
   function scrollPoint(scroll) {
     reef.style.opacity = '0';
@@ -48,6 +55,6 @@ function scrollFunction() {
 
   }
 
-  scrollPoint(scrolled)
+  // scrollPoint(scrolled)
 
 }
