@@ -55,6 +55,6 @@ function scrollFunction() {
 
   }
 
-  // scrollPoint(scrolled)
+  scrollPoint(scrolled)
 
 }
