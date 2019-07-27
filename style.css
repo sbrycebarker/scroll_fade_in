@@ -18,7 +18,7 @@ body {
 header {
   position: absolute;
   height: 400vh;
-  width: 400px;
+  width: 200px;
   z-index: 10;
   /* border-right: solid black 3px; */
   display: flex;
@@ -71,6 +71,7 @@ header {
 /* Add some content at the bottom of the video/page */
 .content {
     position: fixed;
+    margin: 50vh 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
